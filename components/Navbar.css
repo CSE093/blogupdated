@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 2px solid #eee;
+  background: linear-gradient(to right, grey,black);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: orangered;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links li {
+  position: relative;
+  color: gold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: orangered;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: orangered;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
