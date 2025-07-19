@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #ff5722;
+  --hover-color: #e64a19;
+  --text-color: #333;
+  --error-color: #d32f2f;
+  --background: #f9f9f9;
+  --border-radius: 8px;
+  --input-border: #ccc;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: tomato;
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.role-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.role-select:focus {
+  border-color: var(--primary-color);
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.2);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: var(--hover-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.95rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

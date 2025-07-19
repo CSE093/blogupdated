@@ -1,14 +1,16 @@
-import './Navbar.css';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">FOOD-DELIVERY-APP</div>
+      <div className="logo">FOOD BLOG</div>
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Help</li>
-        <li>Search </li>
-        <li>Cart </li>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/help">Help</Link>
+        </li>
       </ul>
     </nav>
   );
